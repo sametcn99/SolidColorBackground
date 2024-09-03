@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SolidColorBackground (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SolidColorBackground (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
