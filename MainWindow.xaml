@@ -7,9 +7,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="Solid Color Background">
-    <StackPanel Background="DarkSlateGray"
+    <StackPanel Background="#202020"
                 Padding="20">
         <ColorPicker x:Name="colorPicker"
-                     ColorChanged="ColorPicker_ColorChanged" />
+                     ColorChanged="ColorPicker_ColorChanged"
+                     CacheMode="BitmapCache" />
     </StackPanel>
 </Window>
