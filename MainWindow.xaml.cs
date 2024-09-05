@@ -51,10 +51,10 @@ namespace SolidColorBackground
 
                 using (var memoryStream = new MemoryStream())
                 {
-                    bitmap.Save(memoryStream, ImageFormat.Png);
+                    bitmap.Save(memoryStream, ImageFormat.Bmp);
                     memoryStream.Seek(0, SeekOrigin.Begin);
 
-                    var picturesFolder = await KnownFolders.PicturesLibrary.CreateFileAsync("solid_color_background.png", CreationCollisionOption.ReplaceExisting);
+                    var picturesFolder = await KnownFolders.PicturesLibrary.CreateFileAsync("solid_color_background.bmp", CreationCollisionOption.ReplaceExisting);
                     using (var fileStream = await picturesFolder.OpenStreamForWriteAsync())
                     {
                         await memoryStream.CopyToAsync(fileStream);
